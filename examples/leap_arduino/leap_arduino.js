@@ -13,7 +13,7 @@ Cylon.robot({
   },
 
   work: function(my) {
-    my.leapmotion.on("frame", function(frame) {
+    my.leap.on("frame", function(frame) {
       if (frame.hands.length > 0) {
         my.led.turnOn();
       } else {
